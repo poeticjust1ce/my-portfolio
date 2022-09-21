@@ -1,6 +1,6 @@
 # Gelo's Portfolio
 
-https://gelocoronel.vercelapp/gelo-portfolio
+https://gelocoronel.vercel.app/gelo-portfolio
 
 ## Made by Using
 
