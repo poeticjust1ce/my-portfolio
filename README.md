@@ -2,7 +2,7 @@
 
 https://gelocoronel.vercel.app/gelo-portfolio
 
-## Made by Using
+## Made Using
 
 - [React.js](https://reactjs.org/) - A JavaScript library for building user interfaces
 - [Tailwind CSS](https://tailwindcss.com/) - A CSS framework to write CSS faster and easier
