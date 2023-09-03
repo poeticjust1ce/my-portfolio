@@ -46,7 +46,7 @@ const Home = () => {
       </div>
       <div className='px-4 my-2'>
         <p className='text-xl font-bold underline-offset-4 underline pb-2'>About me</p>
-        <p className='indent-4 pb-2'>Hello, I am Gelo Ramos, a full-stack web developer based in the Philippines(?). I am currently a 2nd year BS in Information Technology student.</p>
+        <p className='indent-4 pb-2'>Hello, I am Gelo Ramos, a full-stack web developer based in Canada. I am currently a 3rd year BS in Computer Science student.</p>
         <p className='indent-4'>Whereas having a little amount of experience, I am eager and motivated to pursue a career of becoming a successful web developer. I am always seeking for new opportunities to further expand my knowledge and skills not just in web-developing but, aswell in other aspects that are needed to reach or surpass my clients' expectations.</p>
         <div className='flex justify-center'>
           <Link to='/works' className='transition-all px-4 py-2 my-2 hover:bg-opacity-60 flex items-center bg-[#228245] rounded-md'>My works&nbsp;<Fi.FiChevronRight /></Link>
