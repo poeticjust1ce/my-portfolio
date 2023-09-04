@@ -1,8 +1,8 @@
 # Gelo's Portfolio
 
-https://gelocoronel.vercelapp/gelo-portfolio
+https://geloramos.vercel.app
 
-## Made by Using
+## Made using
 
 - [React.js](https://reactjs.org/) - A JavaScript library for building user interfaces
 - [Tailwind CSS](https://tailwindcss.com/) - A CSS framework to write CSS faster and easier
