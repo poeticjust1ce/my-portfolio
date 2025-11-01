@@ -61,8 +61,8 @@ const Terminal = ({ userName, deviceName }: Props) => {
   };
 
   return (
-    <div>
-      <div className="font-mono whitespace-pre text-[0.5rem] sm:text-[0.7rem] md:text-[0.8rem] xl:text-[1rem]">
+    <div className="text-[0.4rem] md:text-[0.8rem] xl:text-[0.8rem]">
+      <div className="font-mono whitespace-pre text-[0.32rem] md:text-[0.7rem] xl:text-[0.8rem]">
         {AsciiArt}
       </div>
       <div>
@@ -76,10 +76,10 @@ const Terminal = ({ userName, deviceName }: Props) => {
                   {userName}@{deviceName}
                 </p>
                 :<p className="text-[#3460f1]">~</p>$
-                <p className="ml-2">{e.content}</p>
+                <p className="ml-1">{e.content}</p>
               </div>
             ) : (
-              <div className="ml-6">{e.content}</div>
+              <div className="ml-2">{e.content}</div>
             )}
           </div>
         ))}
