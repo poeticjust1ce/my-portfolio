@@ -1,73 +1,105 @@
-# React + TypeScript + Vite
+# Terminal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimalist, terminal-style personal portfolio built with React, TypeScript, Vite, and Tailwind CSS. This project simulates a command-line interface where users can explore content, run commands, and interact with small built-in games.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio reimagines a traditional personal website as an interactive terminal. Users type commands to navigate, retrieve information, and trigger features, creating a more engaging and developer-focused experience.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Terminal-style UI with command input and output history
+- Custom command system for navigation and content display
+- Interactive mini-games:
+  - Rock Paper Scissors (`rps`)
+  - Slot Machine (`slot`)
+- ASCII art header
+- Responsive design
+- Clean and minimal aesthetic
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Project Structure
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+poeticjust1ce-my-portfolio/
+├── src/
+│   ├── components/
+│   │   └── Terminal.tsx
+│   ├── constants/
+│   │   ├── Ascii.tsx
+│   │   └── Commands.tsx
+│   ├── utils/
+│   │   ├── RPS.tsx
+│   │   └── SlotMachine.tsx
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+├── index.html
+├── vite.config.ts
+├── package.json
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Installation
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+### Development
+
+```bash
+npm run dev
+```
+
+### Build
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+## Available Commands
+
+Some example commands available in the terminal:
+
+- `help` or `cmds` – list all commands
+- `clear` – clear terminal history
+- `rps [rock|paper|scissors]` – play Rock Paper Scissors
+- `slot` – play the slot machine
+
+Additional commands are defined in `src/constants/Commands.tsx`.
+
+## Customization
+
+You can easily extend the terminal by:
+
+- Adding new commands in `Commands.tsx`
+- Creating new utilities in the `utils` folder
+- Modifying the UI in `Terminal.tsx`
+- Updating ASCII art in `Ascii.tsx`
+
+## Deployment
+
+This project can be deployed on platforms like:
+
+- Vercel
+- Netlify
+- GitHub Pages
+
+## License
+
+This project is open source and available under the MIT License.
